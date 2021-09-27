@@ -1,1 +1,1 @@
-# bootstrapprofile
+# bootstrap
