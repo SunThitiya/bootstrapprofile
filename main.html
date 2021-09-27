@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- Boostrap CSS-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Boostrap JS-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <title>Titiya</title>
+</head>
+<!--การทำหน้าแต่ละหน้าให้สไลด์ โดยใช่คำสั่ง
+1.ID ในการควบคุม
+2.class เป็นการใส่คำสั่งและใส่ความสวยงามให้กับสไลด์
+3.button เป็นการใส่ปุ่มกดทำให้สไลด์เลื่อน
+4.data ก็จะเป็นการใส่ข้อมูลของ carousel 
+<link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/carousel/"> -->
+<body>
+    <div id="slide-main" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#slide-main" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="slide 1"></button>
+            <button type="button" data-bs-target="#slide-main" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#slide-main" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="4000">
+                <img src="./images/profile2.jpg" class="d-block w-100" alt="">
+                <a href="./index.html?page=profile">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>PROFILE</h2>
+                </a>
+            </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+            <img src="./images/animation.jpg" class="d-block w-100" alt="">
+            <a href="./index.html?page=animations">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Animations</h2>
+            </a>
+        </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+        <a href="./index.html?page=projects"><img src="./images/projects.jpg" class="d-block w-100" alt=""></a>
+        <a href="./index.html?page=projects">
+            <div class="carousel-caption d-none d-md-block">
+                <h2>Projects</h2>
+        </a>
+    </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#slide-main" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#slide-main" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">next</span>
+    </button>
+    </div>
+
+</body>
+</html>

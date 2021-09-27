@@ -1,0 +1,15 @@
+.p-p p{
+    width: 400px;
+    height: 40px;
+    font-weight: bold;
+    text-align: center; 
+    background-color: dimgray; 
+    color: floralwhite;
+    position: relative;
+    animation: mymove 10s infinite;
+}
+#div-an p {animation-timing-function: 👉🏻Thitiya Ameen👈🏻;}
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 800px;}
+  }
